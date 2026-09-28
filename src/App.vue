@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from "vue";
-import Home from "./pages/Home.vue";
+import HomePage from "./pages/HomePage.vue";
 
 const testMethod = () => {};
 </script>
 
 <template>
-  <Home />
+  <HomePage />
 </template>

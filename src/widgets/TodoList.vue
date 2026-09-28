@@ -1,13 +1,17 @@
-<script>
-export default {};
+<script setup>
+import TodoItem from "./TodoItem.vue";
+const { items } = defineProps(["items"]);
 </script>
 
 <template>
   <div class="home-page">
     <h3>Todo List</h3>
     <ul>
-      <li></li>
-      <li></li>
+      <TodoItem
+        v-for="item in items"
+        :key="item.id"
+        v-bind="item"
+      />
     </ul>
   </div>
 </template>
