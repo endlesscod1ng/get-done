@@ -11,11 +11,7 @@ const onSubmit = () => {
 <template>
   <div class="add-form">
     <h3>Add item</h3>
-    {{ text }}
-    <form
-      @submit.prevent="onSubmit"
-      action=""
-    >
+    <form @submit.prevent="onSubmit">
       <input
         v-model="text"
         type="text"
